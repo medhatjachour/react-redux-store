@@ -1,13 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
-import { Hero } from './components'
-import { heroapi } from './data/data'
+import { FlexContent, Hero, Sales, ItemsSection } from './components'
+import { heroApi,popularSales, topRateSales, highlight,sneaker,story } from './data/data'
 
 const App = () => {
   return (
     < >
-      <main>
-        <Hero heroapi = {heroapi}/>
+      <main className='flex flex-col gap-16 relative'>
+        <Hero heroApi = {heroApi}/>
+        <Sales endpoint = {popularSales} popular/>
+        <FlexContent endpoint = {highlight} isHighlight/>
+        <Sales endpoint = {topRateSales}/>
+        <FlexContent endpoint = {sneaker}/>
+        <ItemsSection endpoint = {story}/>
       </main>
     </>
   )

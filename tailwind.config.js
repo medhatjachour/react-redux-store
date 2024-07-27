@@ -6,12 +6,12 @@ export default {
   ],
   theme: {
     extend: {},
-    screen:{
-      'xl':{'max':'1200px'},
-      'lg':{'max':'991px'},
-      'md':{'max':'767px'},
-      'sm':{'max':'550px'},
-      'xs':{'max':'375px'},
+    screens: {
+      'xl': {'max': '1200px'},
+      'lg': {'max': '991px'},
+      'md': {'max': '767px'},
+      'sm': {'max': '550px'},
+      'xsm': {'max': '375px'},
     }
   },
   plugins: [],
