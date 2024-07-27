@@ -4,3 +4,4 @@ export {default as FlexContent } from './FlexContent.jsx';
 export {default as ItemsSlider } from './ItemsSlider.jsx';
 export {default as Footer } from './Footer.jsx';
 export {default as Navbar } from './Navbar.jsx';
+export {default as Cart } from './Cart.jsx';
