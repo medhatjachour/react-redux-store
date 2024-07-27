@@ -25,9 +25,9 @@ const CartCount = ({totalQuantity,onCartToggle,onClearCartItem,}) => {
   )
 }
 CartCount.propTypes = {
-  totalQuantity:PropTypes.string,
-    onCartToggle: PropTypes.function,
-    onClearCartItem: PropTypes.function
+  totalQuantity:PropTypes.number,
+    onCartToggle:PropTypes.func.isRequired,
+    onClearCartItem:PropTypes.func.isRequired
 
   };
 export default CartCount

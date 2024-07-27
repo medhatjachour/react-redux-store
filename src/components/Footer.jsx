@@ -32,9 +32,8 @@ const Footer = ({footerAPI:{titles,links}})=> {
   )
 }
 Footer.propTypes = {
-    footerAPI: {
+    footerAPI:PropTypes.func.isRequired,
         titles:  PropTypes.array,
         links:  PropTypes.array
-    }
   };
 export default Footer

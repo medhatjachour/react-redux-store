@@ -23,7 +23,7 @@ const CartEmpty = ({onCartToggle}) => {
 }
 CartEmpty.propTypes = {
 
-  onCartToggle: PropTypes.function,
+  onCartToggle:  PropTypes.func.isRequired,
 
 };
 export default CartEmpty
