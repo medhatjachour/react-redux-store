@@ -1,9 +1,18 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react'
+import { useDispatch } from 'react-redux';
+import { setAddItemToCart,setOpenCart } from "../../app/CartSlice";
 import PropTypes from 'prop-types';
 import { StarIcon, ShoppingBagIcon } from "@heroicons/react/24/solid";
 const Item = ({popular,id, title,text,rating, btn, img, price, color, shadow}) => {
-    
+    const dispatch = useDispatch()
+    const onAddToCart = () =>{
+        const item = {id, title,text,rating,  img, price, color, shadow}
+        dispatch(setAddItemToCart(item))
+    }
+    const onCartToggle = () => {
+        dispatch(setOpenCart({cartState:true}))
+    }
     return (
     <>
     <div id = {id}
@@ -25,10 +34,10 @@ const Item = ({popular,id, title,text,rating, btn, img, price, color, shadow}) =
                 </div>
             </div>
             <div className='flex items-center gap-3'>
-                <button type='button' className='bg-white/90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200'>
+                <button onClick={()=> onAddToCart()} type='button' className='bg-white/90 blur-effect-theme button-theme p-0.5 shadow shadow-sky-200'>
                     <ShoppingBagIcon className=' icon-style text-slate-900'/>
                 </button>
-                <button type='button' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 p-0.5 shadow shadow-sky-200 '>{btn}</button>
+                <button type='button' className='bg-white/90 blur-effect-theme button-theme px-2 py-1 p-0.5 shadow shadow-sky-200' onClick={()=>{ onAddToCart();onCartToggle();}}>{btn}</button>
             </div>
         </div>
         <div className={`flex items-center ${popular?'absolute top-5 right-2':' justify-center'} `}>

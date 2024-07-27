@@ -18,11 +18,11 @@ Welcome to the Awesome React Redux Tailwind Router Website! This project is a si
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/awesome-react-redux-tailwind-router.git
+   git clone https://github.com/medhatjachour/react-redux-store.git
    ```
 2. Install dependencies:
 ```bash
-cd awesome-react-redux-tailwind-router
+cd react-redux-store
 npm install
 ```
 
@@ -32,7 +32,7 @@ npm run dev
 ```
 
 3.Folder Structure
-awesome-react-redux-tailwind-router/
+react-redux-store/
 ├── src/
 │   ├── components/
 │   │   ├── Header.js
