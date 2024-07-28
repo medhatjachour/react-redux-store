@@ -38,16 +38,16 @@ npm run dev
 react-redux-store/
 ├── src/
 │   ├── components/
-│   │   ├── Header.js
-│   │   ├── Footer.js
+│   │   ├── Hero.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── Footer.jsx
 │   │   └── ...
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── About.js
+│   ├── utils/
+│   │   ├── Card.jsx
+│   │   ├── Title.jsx
 │   │   └── ...
-│   ├── redux/
-│   │   ├── actions/
-│   │   ├── reducers/
+│   ├── app/
+│   │   ├── CartSlice
 │   │   └── store.js
 │   └── App.js
 ├── public/
