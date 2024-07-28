@@ -2,6 +2,8 @@
 
 Welcome to the Awesome React Redux Tailwind Router Website! This project is a simple website built using React, Redux, Tailwind CSS, and React Router. It's a great starting point for creating your own web applications.
 
+# Live Demo [react-redux-store-live_demo](https://react-redux-store-seven.vercel.app/)
+
 ![alt text](https://github.com/medhatjachour/react-redux-store/blob/main/sample/1.png?raw=true)
 ![alt text](https://github.com/medhatjachour/react-redux-store/blob/main/sample/2.png?raw=true)
 ![alt text](https://github.com/medhatjachour/react-redux-store/blob/main/sample/3.png?raw=true)
@@ -32,19 +34,20 @@ npm run dev
 ```
 
 3.Folder Structure
+```
 react-redux-store/
 ├── src/
 │   ├── components/
-│   │   ├── Header.js
-│   │   ├── Footer.js
+│   │   ├── Hero.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── Footer.jsx
 │   │   └── ...
-│   ├── pages/
-│   │   ├── Home.js
-│   │   ├── About.js
+│   ├── utils/
+│   │   ├── Card.jsx
+│   │   ├── Title.jsx
 │   │   └── ...
-│   ├── redux/
-│   │   ├── actions/
-│   │   ├── reducers/
+│   ├── app/
+│   │   ├── CartSlice
 │   │   └── store.js
 │   └── App.js
 ├── public/
@@ -52,7 +55,7 @@ react-redux-store/
 │   └── ...
 ├── package.json
 └── README.md
-
+```
 ## Contributing
 
 Contributions are welcome! If you’d like to contribute to this project, just contact me
