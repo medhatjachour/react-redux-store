@@ -2,7 +2,7 @@
 
 Welcome to the Awesome React Redux Tailwind Router Website! This project is a simple website built using React, Redux, Tailwind CSS, and React Router. It's a great starting point for creating your own web applications.
 
-#live demo [text](https://react-redux-store-seven.vercel.app/)
+#live demo [react-redux-store-live_demo](https://react-redux-store-seven.vercel.app/)
 
 ![alt text](https://github.com/medhatjachour/react-redux-store/blob/main/sample/1.png?raw=true)
 ![alt text](https://github.com/medhatjachour/react-redux-store/blob/main/sample/2.png?raw=true)
