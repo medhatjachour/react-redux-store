@@ -1,24 +1,38 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
-import { Navbar,FlexContent, Hero, Sales, ItemsSlider,Footer ,Cart} from './components'
-import { heroApi,popularSales, topRateSales, highlight,sneaker,story,footerAPI } from './data/data'
+import React from "react";
+import { Navbar, Footer, Cart } from "./components";
+import { footerAPI , allProducts} from "./data/data";
+import { Home, ProductView } from "./pages";
+import { Routes, Route } from "react-router-dom";
 
 const App = () => {
   return (
-    < > 
-      <Navbar/>
-      <Cart/>
-      <main className='flex flex-col gap-16 relative'>
-        <Hero heroApi = {heroApi}/>
-        <Sales endpoint = {popularSales} popular/>
-        <FlexContent endpoint = {highlight} isHighlight/>
-        <Sales endpoint = {topRateSales}/>
-        <FlexContent endpoint = {sneaker}/>
-        <ItemsSlider endpoint = {story}/>
-      </main>
-      <Footer footerAPI = {footerAPI}/>
+    <>
+      <Navbar />
+      <Cart />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route
+          path="/"
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <Home />
+            </React.Suspense>
+          }
+        />
+        <Route
+          path="Products/*"
+          element={
+            <React.Suspense fallback={<>...</>}>
+              <ProductView allProducts = {allProducts}/>
+            </React.Suspense>
+          }
+        />
+        {/* <Route path="*" element={<NoMatch />} /> */}
+      </Routes>
+      <Footer footerAPI={footerAPI} />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
