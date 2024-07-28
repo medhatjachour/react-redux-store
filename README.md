@@ -34,6 +34,7 @@ npm run dev
 ```
 
 3.Folder Structure
+```
 react-redux-store/
 ├── src/
 │   ├── components/
@@ -54,7 +55,7 @@ react-redux-store/
 │   └── ...
 ├── package.json
 └── README.md
-
+```
 ## Contributing
 
 Contributions are welcome! If you’d like to contribute to this project, just contact me
